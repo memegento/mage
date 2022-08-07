@@ -1,0 +1,28 @@
+{
+    "name": "memegento/module-mage",
+    "version": "1.0.0",
+    "description": "The Legend Returns",
+    "type": "magento2-module",
+    "require": {
+        "php": ">=7.4",
+        "magento/framework": "*"
+    },
+    "keywords": [
+        "magento 2",
+        "magento 2 mage",
+        "Mage class",
+        "mage nostalgia",
+        "magento nostalgia vibes"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "classmap": [
+            "Mage.php"
+        ],
+        "psr-4": {
+            "Memegento\\Mage\\": ""
+        }
+    }
+}
