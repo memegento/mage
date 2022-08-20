@@ -22,6 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: graycoreio/github-actions-magento2/supported-version@main
+        with:
+          kind: custom
+          custom_versions: ${{ secrets.SUPPORTED_MAGENTO_VERSIONS }}
         id: supported-version
       - run: echo ${{ steps.supported-version.outputs.matrix }}
 

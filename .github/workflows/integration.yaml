@@ -24,7 +24,7 @@ jobs:
       - uses: graycoreio/github-actions-magento2/supported-version@main
         with:
           kind: custom
-          custom_versions: magento/project-community-edition:2.4.5,magento/project-community-edition:2.4.4
+          custom_versions: ${{ secrets.SUPPORTED_MAGENTO_VERSIONS }}
         id: supported-version
       - run: echo ${{ steps.supported-version.outputs.matrix }}
   integration-workflow:
