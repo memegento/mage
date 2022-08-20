@@ -1,12 +1,15 @@
 {
     "name": "memegento/module-mage",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "The Legend Returns",
     "type": "magento2-module",
     "require": {
         "php": ">=7.4",
         "magento/framework": "*"
     },
+    "license": [
+        "OSL-3.0"
+    ],
     "keywords": [
         "magento 2",
         "magento 2 mage",
