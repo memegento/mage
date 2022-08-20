@@ -38,5 +38,5 @@ jobs:
           php_version: ${{ matrix.php }}
           magento_version: ${{ matrix.magento }}
           composer_auth: ${{ secrets.COMPOSER_AUTH }}
-          package_name: memegento/mage
+          package_name: memegento/module-mage
           source_folder: $GITHUB_WORKSPACE

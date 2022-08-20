@@ -28,8 +28,8 @@ jobs:
     needs: compute_matrix
     uses: graycoreio/github-actions-magento2/.github/workflows/integration.yaml@main
     with:
-      package_name: memegento/mage
+      package_name: memegento/module-mage
       matrix: ${{ needs.compute_matrix.outputs.matrix }}
-      test_command: ../../../vendor/bin/phpunit ../../../vendor/memegento/mage/Test/Integration
+      test_command: ../../../vendor/bin/phpunit ../../../vendor/memegento/module-mage/Test/Integration
     secrets:
       composer_auth: ${{ secrets.COMPOSER_AUTH }}
