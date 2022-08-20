@@ -91,7 +91,7 @@ class MageTest extends TestCase
     public function testNotFoundModel(): void
     {
         static::expectException(ReflectionException::class);
-        static::expectExceptionMessage('Class Magento\Foo\Model\Bar does not exist');
+        static::expectExceptionMessage('Class "Magento\Foo\Model\Bar" does not exist');
 
         Mage::getModel('foo/bar');
     }
@@ -106,7 +106,7 @@ class MageTest extends TestCase
 
         static::assertEquals('Simple Product', $product->getName());
         static::assertEquals('simple', $product->getSku());
-        static::assertStringContainsString('catalog/product/view/id/1', $productUrl);
+        static::assertStringContainsString('simple-product', $productUrl);
     }
 
     /**
