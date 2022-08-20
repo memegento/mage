@@ -17,6 +17,9 @@ on:
 jobs:
   compute_matrix:
     runs-on: ubuntu-latest
+    inputs:
+      kind: custom
+      custom_versions: magento/project-community-edition:2.4.5, magento/project-community-edition:2.4.4
     outputs:
       matrix: ${{ steps.supported-version.outputs.matrix }}
     steps:
